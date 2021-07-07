@@ -9,6 +9,7 @@ export default class Route extends Component {
       <RouterContext.Consumer>
         {(context) => {
           const { location } = context;
+          // computedMatch由Switch组件传入，若存在则直接使用即可 单一选择
           const { path, children, component, render, computedMatch } =
             this.props;
           // 根据location判断当前的界面参数
