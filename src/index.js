@@ -7,27 +7,18 @@ import "./index.css";
 // import ContextPage from "./pages/CoreConcepts/Context/ContextPage";
 
 // import HookPage from "./pages/CoreConcepts/Hook/HookPage";
-// import ReduxPage from "./pages/Redux/ReduxPage";
 
-// import ReactReduxPage from "./pages/ReactRedux/ReactReduxPage";
 
-import ReactRouterPage from "./pages/ReactRouter";
-
-import store from './store';
-import { Provider } from './React-Redux';
 import reportWebVitals from "./reportWebVitals";
 
-ReactDOM.render(
-  <Provider store={store}>
+ReactDOM.render(>
     <div className="center">
-      {/* <SetStatePage /> */}
+      <SetStatePage />
       {/* <ContextPage /> */}
       {/* <HookPage /> */}
       {/* <ReduxPage /> */}
       {/* <ReactReduxPage /> */}
-      <ReactRouterPage />
-    </div>
-  </Provider>,
+    </div>,
   document.getElementById("root")
 );
 
