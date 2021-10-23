@@ -8,16 +8,25 @@ import "./index.css";
 
 // import HookPage from "./pages/CoreConcepts/Hook/HookPage";
 
+// import UnControlledPage from "./pages/AdvancedGuides/Uncontrolled";
+// import PortalsPage from "./pages/AdvancedGuides/Portals";
+import ShouldComponentUpdatePage from "./pages/AdvancedGuides/ShouldComponentUpdate";
+
 
 import reportWebVitals from "./reportWebVitals";
 
-ReactDOM.render(>
+ReactDOM.render(
     <div className="center">
-      <SetStatePage />
+      {/* <SetStatePage /> */}
       {/* <ContextPage /> */}
       {/* <HookPage /> */}
       {/* <ReduxPage /> */}
       {/* <ReactReduxPage /> */}
+      {/* <UnControlledPage /> */}
+      {/* <PortalsPage>
+        protals
+      </PortalsPage> */}
+      <ShouldComponentUpdatePage />
     </div>,
   document.getElementById("root")
 );

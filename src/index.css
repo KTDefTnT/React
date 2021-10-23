@@ -15,6 +15,17 @@ code {
 .center {
   padding: 100px;
 }
+.model {
+  position: fixed;
+  top: 100px;
+  left: 30%;
+  width: 500px;
+  height: 100px;
+  margin-left: -150px;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+}
 
 .red {
   border: 1px solid red;
