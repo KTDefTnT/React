@@ -29,8 +29,7 @@ export default function bindActionCreators(actionCreators, dispatch) {
   let boundActionCreators = {};
   for(let key in actionCreators) {
     let actionCreator = actionCreators[key];
-    boundActionCreators[key] = bindActionCreator(actionCreator, dispatch);
-
+    // 排除actionCreator不是函数的值     
     if (typeof actionCreator === 'function') {
       boundActionCreators[key] = bindActionCreator(actionCreator, dispatch)
     }
